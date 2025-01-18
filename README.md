@@ -21,7 +21,7 @@ The AWS CLI is a powerful tool for interacting with AWS services from the comman
 17. [Systems Manager (SSM) Commands](#systems-manager-ssm-commands)
 18. [CloudTrail Commands](#cloudtrail-commands)
 19. [Advanced Commands](#advanced-commands)
-20. [Tips and Tricks](#tips-and-tricks)
+20. [More](#more)
 
 ## Installation and Configuration
 
@@ -45,8 +45,6 @@ aws configure
 ```
 - Enter your AWS Access Key, Secret Key, Region, and Output format (e.g., `json`).
 
----
-
 ## Basic Commands
 
 ### Check AWS CLI Version
@@ -68,8 +66,6 @@ aws configure set region <region-name>
 ```bash
 aws configure set output <json|text|table>
 ```
-
----
 
 ## EC2 Commands
 
@@ -104,8 +100,6 @@ aws ec2 run-instances \
 aws ec2 terminate-instances --instance-ids <instance-id>
 ```
 
----
-
 ## S3 Commands
 
 ### List S3 Buckets
@@ -138,8 +132,6 @@ aws s3 sync <local-directory> s3://<bucket-name>/<path>
 aws s3api delete-bucket --bucket <bucket-name>
 ```
 
----
-
 ## IAM Commands
 
 ### List IAM Users
@@ -166,8 +158,6 @@ aws iam create-role --role-name <role-name> --assume-role-policy-document file:/
 ```bash
 aws iam list-roles
 ```
-
----
 
 ## Lambda Commands
 
@@ -196,8 +186,6 @@ aws lambda invoke --function-name <function-name> output.txt
 aws lambda update-function-code --function-name <function-name> --zip-file fileb://function.zip
 ```
 
----
-
 ## RDS Commands
 
 ### List RDS Instances
@@ -220,8 +208,6 @@ aws rds create-db-instance \
 ```bash
 aws rds delete-db-instance --db-instance-identifier <instance-id> --skip-final-snapshot
 ```
-
----
 
 ## CloudWatch Commands
 
@@ -249,8 +235,6 @@ aws cloudwatch put-metric-alarm \
     --evaluation-periods 2 \
     --alarm-actions arn:aws:sns:<region>:<account-id>:<sns-topic-name>
 ```
-
----
 
 ## DynamoDB Commands
 
@@ -288,8 +272,6 @@ aws dynamodb query \
 aws dynamodb delete-table --table-name MyTable
 ```
 
----
-
 ## ECS Commands
 
 ### List ECS Clusters
@@ -320,8 +302,6 @@ aws ecs run-task \
 aws ecs stop-task --cluster <cluster-name> --task <task-id>
 ```
 
----
-
 ## EKS Commands
 
 ### List EKS Clusters
@@ -343,8 +323,6 @@ aws eks update-cluster-config --name <cluster-name> --resources-vpc-config endpo
 ```bash
 aws eks list-nodegroups --cluster-name <cluster-name>
 ```
-
----
 
 ## CloudFormation Commands
 
@@ -370,8 +348,6 @@ aws cloudformation delete-stack --stack-name MyStack
 ```bash
 aws cloudformation list-stacks
 ```
-
----
 
 ## Route 53 Commands
 
@@ -399,8 +375,6 @@ aws route53 change-resource-record-sets \
     --change-batch file://dns-record.json
 ```
 
----
-
 ## SNS Commands
 
 ### List SNS Topics
@@ -427,8 +401,6 @@ aws sns subscribe \
     --protocol email \
     --notification-endpoint user@example.com
 ```
-
----
 
 ## SQS Commands
 
@@ -460,8 +432,6 @@ aws sqs receive-message \
 aws sqs delete-queue --queue-url https://sqs.<region>.amazonaws.com/<account-id>/MyQueue
 ```
 
----
-
 ## Secrets Manager Commands
 
 ### List Secrets
@@ -485,8 +455,6 @@ aws secretsmanager get-secret-value --secret-id MySecret
 ```bash
 aws secretsmanager delete-secret --secret-id MySecret
 ```
-
----
 
 ## Systems Manager (SSM) Commands
 
@@ -516,8 +484,6 @@ aws ssm send-command \
     --parameters 'commands=["echo Hello, World!"]'
 ```
 
----
-
 ## CloudTrail Commands
 
 ### List CloudTrail Trails
@@ -542,8 +508,6 @@ aws cloudtrail start-logging --name MyTrail
 ```bash
 aws cloudtrail stop-logging --name MyTrail
 ```
-
----
 
 ## Advanced Commands
 
@@ -574,9 +538,7 @@ aws s3api list-objects --bucket <bucket-name> --page-size 100 --max-items 1000
 aws ec2 describe-instances --query 'Reservations[*].Instances[?State.Name==`running`].InstanceId'
 ```
 
----
-
-## Tips and Tricks
+## More
 
 1. **Use `--dry-run` to Test Commands**
    ```bash
