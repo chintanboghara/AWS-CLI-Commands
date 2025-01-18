@@ -23,8 +23,6 @@ The AWS CLI is a powerful tool for interacting with AWS services from the comman
 19. [Advanced Commands](#advanced-commands)
 20. [Tips and Tricks](#tips-and-tricks)
 
----
-
 ## Installation and Configuration
 
 ### Install AWS CLI
