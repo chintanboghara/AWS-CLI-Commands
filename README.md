@@ -2,29 +2,6 @@
 
 The `aws` CLI is a powerful tool for interacting with AWS services from the command line.
 
-## Table of Contents
-
-1. [Installation and Configuration](#installation-and-configuration)
-2. [Basic Commands](#basic-commands)
-3. [EC2 Commands](#ec2-commands)
-4. [S3 Commands](#s3-commands)
-5. [IAM Commands](#iam-commands)
-6. [Lambda Commands](#lambda-commands)
-7. [RDS Commands](#rds-commands)
-8. [CloudWatch Commands](#cloudwatch-commands)
-9. [DynamoDB Commands](#dynamodb-commands)
-10. [ECS Commands](#ecs-commands)
-11. [EKS Commands](#eks-commands)
-12. [CloudFormation Commands](#cloudformation-commands)
-13. [Route 53 Commands](#route-53-commands)
-14. [SNS Commands](#sns-commands)
-15. [SQS Commands](#sqs-commands)
-16. [Secrets Manager Commands](#secrets-manager-commands)
-17. [Systems Manager (SSM) Commands](#systems-manager-ssm-commands)
-18. [CloudTrail Commands](#cloudtrail-commands)
-19. [Advanced Commands](#advanced-commands)
-20. [More](#more)
-
 ## Installation and Configuration
 
 ### Install AWS CLI
