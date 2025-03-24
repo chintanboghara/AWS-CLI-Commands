@@ -1,6 +1,6 @@
 # AWS CLI Commands
 
-The AWS CLI is a powerful tool for interacting with AWS services from the command line.
+The `aws` CLI is a powerful tool for interacting with AWS services from the command line.
 
 ## Table of Contents
 
